@@ -6,7 +6,7 @@
 def too_many_kittens(kittens, litterboxes, catfood):
     """This module returns boolean for food available.
 
-        Args:
+    Args:
         kittens(int): Number of kittens.
         litterbox(int): Number of litterboxes for kittens.
         catfood(bool): Boolean, enough food available for kittens.
@@ -25,5 +25,6 @@ def too_many_kittens(kittens, litterboxes, catfood):
         >>> too_many_kittens(12,12,False)
         True
     """
+    
     enoughfood = not(litterboxes >= kittens and catfood)
     return enoughfood
